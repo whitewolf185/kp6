@@ -11,34 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3546773a-f60a-485f-93e6-c58c297e4fc1" name="Default Changelist" comment="maks change some code">
+    <list default="true" id="3546773a-f60a-485f-93e6-c58c297e4fc1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/C.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/maks.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kp6.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kp6.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kp6.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kp6.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kp6.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kp6.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kp6.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.bash" beforeDir="false" afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +58,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="CMake Application.maks">
+  <component name="RunManager" selected="Bash.build-start.sh">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -105,6 +81,11 @@
       <option name="PARAMETERS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="kp6" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="kp6" TARGET_NAME="kp6" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="kp6" RUN_TARGET_NAME="kp6">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="maks" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="kp6" TARGET_NAME="maks" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="kp6" RUN_TARGET_NAME="maks">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -112,6 +93,7 @@
     </configuration>
     <list>
       <item itemvalue="Bash.build-start.sh" />
+      <item itemvalue="CMake Application.kp6" />
       <item itemvalue="CMake Application.maks" />
     </list>
   </component>
@@ -127,7 +109,8 @@
       <updated>1583312814660</updated>
       <workItem from="1583312816473" duration="273000" />
       <workItem from="1583313110407" duration="310000" />
-      <workItem from="1583313443967" duration="3382000" />
+      <workItem from="1583313443967" duration="3582000" />
+      <workItem from="1583328202813" duration="120000" />
     </task>
     <task id="LOCAL-00001" summary="Getting started">
       <created>1583312981156</created>
@@ -157,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583325064621</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="some changes">
+      <created>1583327987473</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583327987474</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +157,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Getting started" />
     <MESSAGE value="maks change some code" />
-    <option name="LAST_COMMIT_MESSAGE" value="maks change some code" />
+    <MESSAGE value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583327536982">
@@ -178,38 +169,38 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="735" y="381" width="506" height="343" key="#com.intellij.tools.ToolEditorDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583326646248" />
-    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2" timestamp="1583325064478">
+    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2" timestamp="1583327987296">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1583325064478" />
+    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1583327987296" />
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583326605088">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583326605088" />
-    <state width="1807" height="255" key="GridCell.Tab.0.bottom" timestamp="1583327669700">
+    <state width="1807" height="255" key="GridCell.Tab.0.bottom" timestamp="1583328399740">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="255" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583327669700" />
-    <state width="1807" height="255" key="GridCell.Tab.0.center" timestamp="1583327669693">
+    <state width="1807" height="255" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583328399740" />
+    <state width="1807" height="255" key="GridCell.Tab.0.center" timestamp="1583328399733">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="255" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583327669693" />
-    <state width="1807" height="255" key="GridCell.Tab.0.left" timestamp="1583327669688">
+    <state width="1807" height="255" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583328399733" />
+    <state width="1807" height="255" key="GridCell.Tab.0.left" timestamp="1583328399728">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="255" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583327669688" />
-    <state width="1807" height="255" key="GridCell.Tab.0.right" timestamp="1583327669697">
+    <state width="1807" height="255" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583328399728" />
+    <state width="1807" height="255" key="GridCell.Tab.0.right" timestamp="1583328399736">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="255" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583327669697" />
-    <state x="482" y="187" key="SettingsEditor" timestamp="1583326253695">
+    <state width="1807" height="255" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583328399736" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1583328323411">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583326253695" />
-    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1583313500414">
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583328323411" />
+    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1583327993291">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1583313500414" />
+    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1583327993291" />
     <state x="874" y="209" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1583326648949">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
