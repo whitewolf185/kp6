@@ -40,4 +40,29 @@ then
   exit 0
 fi
 
-if [[ $key_ ]]
+if [[ $key_create -eq 1 ]]
+then
+  touch "$file_path"
+  exit 0
+fi
+
+if [[ $key_del_alldb -eq 1 ]]
+then
+  rm "$file_path" || exit 126
+  exit 0
+fi
+
+if [[ "$key_show_alldb" -eq 1 ]]
+then
+  cat "$file_path" || exit 126
+  exit 0
+fi
+
+if [[ "$key_show" -eq 1 ]]
+then
+  ./cmake-build-debug/kp6 q || exit 1
+fi
+
+if [[ "$key_add" -eq 1 ]]; then
+    ./cmake-build-debug/kp6 a || exit 1
+fi

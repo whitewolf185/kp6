@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="kp6" targetName="kp6" />
       <config projectName="kp6" targetName="maks" />
     </generated>
   </component>
@@ -12,7 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3546773a-f60a-485f-93e6-c58c297e4fc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
     </list>
@@ -24,7 +24,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -56,7 +55,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RunManager" selected="Bash.build-start.sh">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -111,6 +110,7 @@
       <workItem from="1583313110407" duration="310000" />
       <workItem from="1583313443967" duration="3582000" />
       <workItem from="1583328202813" duration="120000" />
+      <workItem from="1583328351248" duration="2117000" />
     </task>
     <task id="LOCAL-00001" summary="Getting started">
       <created>1583312981156</created>
@@ -147,7 +147,28 @@
       <option name="project" value="LOCAL" />
       <updated>1583327987474</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="some changes">
+      <created>1583328435862</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583328435863</updated>
+    </task>
+    <task id="LOCAL-00007" summary="some changes">
+      <created>1583328457469</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583328457470</updated>
+    </task>
+    <task id="LOCAL-00008" summary="some changes">
+      <created>1583328577374</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583328577374</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,10 +182,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="some changes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="778" y="448" key="#Shellcheck" timestamp="1583328488211">
+    <state x="778" y="448" key="#Shellcheck" timestamp="1583330687644">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="778" y="448" key="#Shellcheck/67.27.1853.1053@67.27.1853.1053" timestamp="1583328488211" />
+    <state x="778" y="448" key="#Shellcheck/67.27.1853.1053@67.27.1853.1053" timestamp="1583330687644" />
     <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583327536982">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -173,38 +194,38 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="735" y="381" width="506" height="343" key="#com.intellij.tools.ToolEditorDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583326646248" />
-    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2" timestamp="1583328457180">
+    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2" timestamp="1583328577157">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1583328457180" />
+    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1583328577157" />
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583326605088">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583326605088" />
-    <state width="1807" height="255" key="GridCell.Tab.0.bottom" timestamp="1583328399740">
+    <state width="1807" height="255" key="GridCell.Tab.0.bottom" timestamp="1583330472729">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="255" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583328399740" />
-    <state width="1807" height="255" key="GridCell.Tab.0.center" timestamp="1583328399733">
+    <state width="1807" height="255" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583330472729" />
+    <state width="1807" height="255" key="GridCell.Tab.0.center" timestamp="1583330472724">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="255" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583328399733" />
-    <state width="1807" height="255" key="GridCell.Tab.0.left" timestamp="1583328399728">
+    <state width="1807" height="255" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583330472724" />
+    <state width="1807" height="255" key="GridCell.Tab.0.left" timestamp="1583330472720">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="255" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583328399728" />
-    <state width="1807" height="255" key="GridCell.Tab.0.right" timestamp="1583328399736">
+    <state width="1807" height="255" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583330472720" />
+    <state width="1807" height="255" key="GridCell.Tab.0.right" timestamp="1583330472726">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="255" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583328399736" />
-    <state x="482" y="187" key="SettingsEditor" timestamp="1583328323411">
+    <state width="1807" height="255" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583330472726" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1583330669381">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583328323411" />
-    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1583327993291">
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583330669381" />
+    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1583328583626">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1583327993291" />
+    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1583328583626" />
     <state x="874" y="209" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1583326648949">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

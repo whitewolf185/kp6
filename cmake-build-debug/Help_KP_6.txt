@@ -1,0 +1,36 @@
+ABOUT
+	This is graduate database manual. Fields are: surname, name, patronymic, gender,
+	group number, group letter, information about higher eduaction, work and army.
+	Supported operations: add record, remove record, create database, remove database,
+	print database, view this manual, request by surname, request for group with max amount of girls.
+
+USAGE
+	./kp6.exe <key> <parameters>
+
+	Note: path to database should be last parameter, you should use full path name
+
+KEYS
+	-h
+		Prints this manual
+	-c <database path>
+		Creates specified database, if it does NOT exists
+	-r <database path>
+		Removes specified database, if it exists
+	-a <record information> <database path>
+		Adds record in back of specified database
+		You should input all fields in correct order
+	-d <N> <database path>
+		Removes N record in specified database
+	-m <database path>
+		Prints group with max amount of girls in specified database
+	-q <surname> <database path>
+		Search for surname in specified database and ouput record number
+		or message, that record does not exists
+	-p <database path>
+		Prints all records in specified database
+
+RETURN CODES
+	1 - You have not specified any key
+	2 - You have specified wrong key or parameters
+	3 - Error opening the database file
+	4 - Error handling parameters
