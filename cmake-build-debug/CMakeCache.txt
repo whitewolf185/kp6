@@ -124,7 +124,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=KP6
+CMAKE_PROJECT_NAME:STATIC=kp6
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -185,17 +185,17 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Value Computed by CMake
-KP6_BINARY_DIR:STATIC=/home/im/CLionProjects/kp6/cmake-build-debug
-
-//Value Computed by CMake
-KP6_SOURCE_DIR:STATIC=/home/im/CLionProjects/kp6
-
 //Path to a program.
 ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
+
+//Value Computed by CMake
+kp6_BINARY_DIR:STATIC=/home/im/CLionProjects/kp6/cmake-build-debug
+
+//Value Computed by CMake
+kp6_SOURCE_DIR:STATIC=/home/im/CLionProjects/kp6
 
 
 ########################

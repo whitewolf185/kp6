@@ -53,14 +53,12 @@ CMAKE_BINARY_DIR = /home/im/CLionProjects/kp6/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/KP6.dir/all
-all: CMakeFiles/kp6.dir/all
+all: CMakeFiles/maks.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/KP6.dir/clean
-clean: CMakeFiles/kp6.dir/clean
+clean: CMakeFiles/maks.dir/clean
 
 .PHONY : clean
 
@@ -70,58 +68,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/KP6.dir
+# Target rules for target CMakeFiles/maks.dir
 
 # All Build rule for target.
-CMakeFiles/KP6.dir/all:
-	$(MAKE) -f CMakeFiles/KP6.dir/build.make CMakeFiles/KP6.dir/depend
-	$(MAKE) -f CMakeFiles/KP6.dir/build.make CMakeFiles/KP6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/im/CLionProjects/kp6/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target KP6"
-.PHONY : CMakeFiles/KP6.dir/all
+CMakeFiles/maks.dir/all:
+	$(MAKE) -f CMakeFiles/maks.dir/build.make CMakeFiles/maks.dir/depend
+	$(MAKE) -f CMakeFiles/maks.dir/build.make CMakeFiles/maks.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/im/CLionProjects/kp6/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target maks"
+.PHONY : CMakeFiles/maks.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/KP6.dir/rule: cmake_check_build_system
+CMakeFiles/maks.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/im/CLionProjects/kp6/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/KP6.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/maks.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/im/CLionProjects/kp6/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/KP6.dir/rule
+.PHONY : CMakeFiles/maks.dir/rule
 
 # Convenience name for target.
-KP6: CMakeFiles/KP6.dir/rule
+maks: CMakeFiles/maks.dir/rule
 
-.PHONY : KP6
-
-# clean rule for target.
-CMakeFiles/KP6.dir/clean:
-	$(MAKE) -f CMakeFiles/KP6.dir/build.make CMakeFiles/KP6.dir/clean
-.PHONY : CMakeFiles/KP6.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/kp6.dir
-
-# All Build rule for target.
-CMakeFiles/kp6.dir/all:
-	$(MAKE) -f CMakeFiles/kp6.dir/build.make CMakeFiles/kp6.dir/depend
-	$(MAKE) -f CMakeFiles/kp6.dir/build.make CMakeFiles/kp6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/im/CLionProjects/kp6/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target kp6"
-.PHONY : CMakeFiles/kp6.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/kp6.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/im/CLionProjects/kp6/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/kp6.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/im/CLionProjects/kp6/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/kp6.dir/rule
-
-# Convenience name for target.
-kp6: CMakeFiles/kp6.dir/rule
-
-.PHONY : kp6
+.PHONY : maks
 
 # clean rule for target.
-CMakeFiles/kp6.dir/clean:
-	$(MAKE) -f CMakeFiles/kp6.dir/build.make CMakeFiles/kp6.dir/clean
-.PHONY : CMakeFiles/kp6.dir/clean
+CMakeFiles/maks.dir/clean:
+	$(MAKE) -f CMakeFiles/maks.dir/build.make CMakeFiles/maks.dir/clean
+.PHONY : CMakeFiles/maks.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

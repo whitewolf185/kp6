@@ -111,57 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named KP6
+# Target rules for targets named maks
 
 # Build rule for target.
-KP6: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 KP6
-.PHONY : KP6
+maks: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 maks
+.PHONY : maks
 
 # fast build rule for target.
-KP6/fast:
-	$(MAKE) -f CMakeFiles/KP6.dir/build.make CMakeFiles/KP6.dir/build
-.PHONY : KP6/fast
-
-#=============================================================================
-# Target rules for targets named kp6
-
-# Build rule for target.
-kp6: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 kp6
-.PHONY : kp6
-
-# fast build rule for target.
-kp6/fast:
-	$(MAKE) -f CMakeFiles/kp6.dir/build.make CMakeFiles/kp6.dir/build
-.PHONY : kp6/fast
-
-kp6.o: kp6.c.o
-
-.PHONY : kp6.o
-
-# target to build an object file
-kp6.c.o:
-	$(MAKE) -f CMakeFiles/kp6.dir/build.make CMakeFiles/kp6.dir/kp6.c.o
-.PHONY : kp6.c.o
-
-kp6.i: kp6.c.i
-
-.PHONY : kp6.i
-
-# target to preprocess a source file
-kp6.c.i:
-	$(MAKE) -f CMakeFiles/kp6.dir/build.make CMakeFiles/kp6.dir/kp6.c.i
-.PHONY : kp6.c.i
-
-kp6.s: kp6.c.s
-
-.PHONY : kp6.s
-
-# target to generate assembly for a file
-kp6.c.s:
-	$(MAKE) -f CMakeFiles/kp6.dir/build.make CMakeFiles/kp6.dir/kp6.c.s
-.PHONY : kp6.c.s
+maks/fast:
+	$(MAKE) -f CMakeFiles/maks.dir/build.make CMakeFiles/maks.dir/build
+.PHONY : maks/fast
 
 maks.o: maks.c.o
 
@@ -169,7 +129,7 @@ maks.o: maks.c.o
 
 # target to build an object file
 maks.c.o:
-	$(MAKE) -f CMakeFiles/KP6.dir/build.make CMakeFiles/KP6.dir/maks.c.o
+	$(MAKE) -f CMakeFiles/maks.dir/build.make CMakeFiles/maks.dir/maks.c.o
 .PHONY : maks.c.o
 
 maks.i: maks.c.i
@@ -178,7 +138,7 @@ maks.i: maks.c.i
 
 # target to preprocess a source file
 maks.c.i:
-	$(MAKE) -f CMakeFiles/KP6.dir/build.make CMakeFiles/KP6.dir/maks.c.i
+	$(MAKE) -f CMakeFiles/maks.dir/build.make CMakeFiles/maks.dir/maks.c.i
 .PHONY : maks.c.i
 
 maks.s: maks.c.s
@@ -187,7 +147,7 @@ maks.s: maks.c.s
 
 # target to generate assembly for a file
 maks.c.s:
-	$(MAKE) -f CMakeFiles/KP6.dir/build.make CMakeFiles/KP6.dir/maks.c.s
+	$(MAKE) -f CMakeFiles/maks.dir/build.make CMakeFiles/maks.dir/maks.c.s
 .PHONY : maks.c.s
 
 # Help Target
@@ -197,12 +157,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... maks"
 	@echo "... edit_cache"
-	@echo "... KP6"
-	@echo "... kp6"
-	@echo "... kp6.o"
-	@echo "... kp6.i"
-	@echo "... kp6.s"
 	@echo "... maks.o"
 	@echo "... maks.i"
 	@echo "... maks.s"
