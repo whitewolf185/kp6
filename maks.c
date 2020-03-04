@@ -26,6 +26,7 @@ struct group{
 };
 typedef struct group group;
 
+//нули не видны при печати
 void clear(char x[], int size){
     for(int i=0; i<size; i++) x[i]=0;
 }
@@ -166,6 +167,7 @@ int main(int argc, char *argv[]){
         int i=0;
         graduate a;
         FILE *tmp1=NULL, *tmp2=NULL;
+        //TODO узнать у макса что это за файлы
         tmp1=fopen("tmp_file1_11235813", "ab");
         tmp2=fopen("tmp_file2_11235813", "ab");
         fclose(tmp1);

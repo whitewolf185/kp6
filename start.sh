@@ -1,6 +1,4 @@
 #!/bin/bash
-echo "Script started"
-
 #exicutable keys start
 key_help=0
 key_add=0
@@ -32,6 +30,14 @@ do
 done
 param="$1"
 file_path="$2"
+if [[ ! -e "$file_path" ]]; then
+    echo "File does not exist. Do you want to create its?"
+    read -p "y/n " a
+    if [[ "$a" = "y" ]]; then
+      key_create=1
+    fi
+fi
+
 if [[ $key_help -eq 1 ]]
 then
   cat help.txt
@@ -40,13 +46,15 @@ fi
 
 if [[ $key_create -eq 1 ]]
 then
-  touch "$file_path"
+  > "$file_path"
+  echo "db succsesfully created"
   exit 0
 fi
 
 if [[ $key_del_alldb -eq 1 ]]
 then
   rm "$file_path" || exit 126
+  echo "db succsesfully deleted"
   exit 0
 fi
 
@@ -64,17 +72,17 @@ fi
 
 if [[ "$key_show" -eq 1 ]]
 then
-  ./cmake-build-debug/kp6 q || exit 1
+  ./cmake-build-debug/kp6 q "$param" "$file_path" || exit 1
 fi
 
 if [[ "$key_add" -eq 1 ]]; then
-    ./cmake-build-debug/kp6 a || exit 1
+    ./cmake-build-debug/kp6 a "$param" "$file_path" || exit 1
 fi
 
 if [ "$key_del" -eq 1 ]; then
-    ./cmake-build-debug/kp6 d || exit 1
+    ./cmake-build-debug/kp6 d "$param" "$file_path" || exit 1
 fi
 
 if [ "$key_MakeMyTask" -eq 1 ]; then
-    ./cmake-build-debug/kp6 m || exit 1
+    ./cmake-build-debug/kp6 m "$param" "$file_path" || exit 1
 fi
