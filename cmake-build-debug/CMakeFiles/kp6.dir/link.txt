@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/kp6.dir/kp6.c.o  -o kp6 
