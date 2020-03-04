@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "Script started"
 
-let "num=$#-2"
 #exicutable keys start
 key_help=0
 key_add=0
@@ -13,12 +12,10 @@ key_create=0
 key_MakeMyTask=0
 #exicutable keys end
 #__________________________
-echo $#
-for (( i=1; i <= $num; i++ ))
-do
-  if [ "$1" = "-*" ]; then
 
-  fi
+for (( i=1; i <= $#; i++ ))
+do
+  if [ "${1:0:1}" = "-" ]; then
   case "$1" in
     "-h" | "--help" ) key_help=1;;
     "-a" | "--add" ) key_add=1 ;;
@@ -30,10 +27,9 @@ do
     "-m" | "--make" ) key_MakeMyTask=1 ;;
   esac
   shift
+  fi
+
 done
-
-
-
 param="$1"
 file_path="$2"
 if [[ $key_help -eq 1 ]]
