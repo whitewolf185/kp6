@@ -40,4 +40,4 @@ then
   exit 0
 fi
 
-if [[  ]]
+if [[ $key_ ]]
