@@ -13,20 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3546773a-f60a-485f-93e6-c58c297e4fc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/KP6.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kp6.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kp6.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kp6.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kp6.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/KP6.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/KP6.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maks.c" beforeDir="false" afterPath="$PROJECT_DIR$/maks.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.bash" beforeDir="false" afterPath="$PROJECT_DIR$/start.bash" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +80,7 @@
       <updated>1583312814660</updated>
       <workItem from="1583312816473" duration="273000" />
       <workItem from="1583313110407" duration="310000" />
+      <workItem from="1583313443967" duration="403000" />
     </task>
     <task id="LOCAL-00001" summary="Getting started">
       <created>1583312981156</created>
@@ -106,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583313236613</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Getting started">
+      <created>1583313493857</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583313493857</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,17 +115,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="Getting started" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2" timestamp="1583313236339">
+    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2" timestamp="1583325041181">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1583313236339" />
+    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1583325041181" />
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583313329933">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583313329933" />
-    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1583313268786">
+    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1583313500414">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1583313268786" />
+    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1583313500414" />
   </component>
 </project>
