@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/KP6.dir/maks.c.o  -o KP6 
