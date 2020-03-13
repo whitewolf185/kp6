@@ -10,7 +10,7 @@ key_create=0
 key_MakeMyTask=0
 #exicutable keys end
 #__________________________
-
+file_path="${!#}"
 for (( i=1; i <= $#; i++ ))
 do
   if [ "${1:0:1}" = "-" ]; then
@@ -28,8 +28,8 @@ do
   fi
 
 done
-param="$1"
-file_path="$2"
+param=$1
+
 if [[ ! -e "$file_path" ]]; then
     echo "File does not exist. Do you want to create its?"
     read -p "y/n " a
@@ -76,7 +76,17 @@ then
 fi
 
 if [[ "$key_add" -eq 1 ]]; then
-    ./cmake-build-debug/kp6 a "$param" "$file_path" || exit 1
+  param1=$1
+  param2=$2
+  param3=$3
+  param4=$4
+  param5=$5
+  param6=$6
+  param7=$7
+  param8=$8
+  param9=$9
+
+    ./cmake-build-debug/kp6 a "$param1" "$param2" "$param3" "$param4" "$param5" "$param6" "$param7" "$param8" "$param9" "$file_path" || exit 1
 fi
 
 if [ "$key_del" -eq 1 ]; then

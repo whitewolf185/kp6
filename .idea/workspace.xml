@@ -15,6 +15,7 @@
     <list default="true" id="3546773a-f60a-485f-93e6-c58c297e4fc1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kp6.c" beforeDir="false" afterPath="$PROJECT_DIR$/kp6.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +114,7 @@
       <workItem from="1583328351248" duration="2117000" />
       <workItem from="1583330595200" duration="2747000" />
       <workItem from="1583681387073" duration="1880000" />
-      <workItem from="1584086162316" duration="1193000" />
+      <workItem from="1584086162316" duration="3356000" />
     </task>
     <task id="LOCAL-00001" summary="Getting started">
       <created>1583312981156</created>
@@ -178,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583330725878</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added request">
+      <created>1584087434130</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1584087434130</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +198,8 @@
     <MESSAGE value="maks change some code" />
     <MESSAGE value="some changes" />
     <MESSAGE value="adds maks's help" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds maks's help" />
+    <MESSAGE value="added request" />
+    <option name="LAST_COMMIT_MESSAGE" value="added request" />
   </component>
   <component name="WindowStateProjectService">
     <state x="778" y="448" key="#Shellcheck" timestamp="1583330687644">
@@ -205,10 +214,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="735" y="381" width="506" height="343" key="#com.intellij.tools.ToolEditorDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583326646248" />
-    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2" timestamp="1584087403334">
+    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2" timestamp="1584087433826">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1584087403334" />
+    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1584087433826" />
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583990844922">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
