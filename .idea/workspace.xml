@@ -15,8 +15,6 @@
     <list default="true" id="3546773a-f60a-485f-93e6-c58c297e4fc1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kp6.c" beforeDir="false" afterPath="$PROJECT_DIR$/kp6.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maks.c" beforeDir="false" afterPath="$PROJECT_DIR$/maks.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +24,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -51,16 +48,16 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="/media/im/ESD-USB/Все лабы" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
-  <component name="RunManager" selected="CMake Application.kp6">
+  <component name="RunManager" selected="Bash.build-start.sh">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -70,6 +67,17 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <module name="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="build-start.sh" type="BashConfigurationType" factoryName="Bash">
+      <module name="kp6" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/start.sh" />
+      <option name="PARAMETERS" value="" />
       <method v="2" />
     </configuration>
     <configuration name="kp6" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="kp6" TARGET_NAME="kp6" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="kp6" RUN_TARGET_NAME="kp6">
@@ -83,6 +91,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Bash.build-start.sh" />
       <item itemvalue="CMake Application.kp6" />
       <item itemvalue="CMake Application.maks" />
     </list>
@@ -102,9 +111,9 @@
       <workItem from="1583313443967" duration="3582000" />
       <workItem from="1583328202813" duration="120000" />
       <workItem from="1583328351248" duration="2117000" />
-      <workItem from="1583338981447" duration="1864000" />
-      <workItem from="1583350181645" duration="50000" />
-      <workItem from="1583350243452" duration="4753000" />
+      <workItem from="1583330595200" duration="2747000" />
+      <workItem from="1583681387073" duration="1880000" />
+      <workItem from="1584086162316" duration="1193000" />
     </task>
     <task id="LOCAL-00001" summary="Getting started">
       <created>1583312981156</created>
@@ -162,12 +171,12 @@
       <option name="project" value="LOCAL" />
       <updated>1583328577374</updated>
     </task>
-    <task id="LOCAL-00009" summary="added revealing first char of string">
-      <created>1583339240411</created>
+    <task id="LOCAL-00009" summary="adds maks's help">
+      <created>1583330725878</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1583339240411</updated>
+      <updated>1583330725878</updated>
     </task>
     <option name="localTasksCounter" value="10" />
     <servers />
@@ -180,30 +189,30 @@
     <MESSAGE value="Getting started" />
     <MESSAGE value="maks change some code" />
     <MESSAGE value="some changes" />
-    <MESSAGE value="added revealing first char of string" />
-    <option name="LAST_COMMIT_MESSAGE" value="added revealing first char of string" />
+    <MESSAGE value="adds maks's help" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds maks's help" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="778" y="448" width="420" height="209" key="#Shellcheck" timestamp="1583350201361">
+    <state x="778" y="448" key="#Shellcheck" timestamp="1583330687644">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="778" y="448" width="420" height="209" key="#Shellcheck/67.27.1853.1053@67.27.1853.1053" timestamp="1583350201361" />
-    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583350146300">
+    <state x="778" y="448" key="#Shellcheck/67.27.1853.1053@67.27.1853.1053" timestamp="1583330687644" />
+    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583327536982">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583350146300" />
+    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583327536982" />
     <state x="735" y="381" width="506" height="343" key="#com.intellij.tools.ToolEditorDialog" timestamp="1583326646248">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="735" y="381" width="506" height="343" key="#com.intellij.tools.ToolEditorDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583326646248" />
-    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2" timestamp="1583339240246">
+    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2" timestamp="1584087403334">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1583339240246" />
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583326605088">
+    <state x="554" y="61" width="869" height="982" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1584087403334" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583990844922">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583326605088" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583990844922" />
     <state width="1807" height="255" key="GridCell.Tab.0.bottom" timestamp="1583330472729">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -220,14 +229,14 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="255" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583330472726" />
-    <state x="482" y="187" key="SettingsEditor" timestamp="1583350229577">
+    <state x="482" y="187" key="SettingsEditor" timestamp="1583330669381">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583350229577" />
-    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1583339244833">
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583330669381" />
+    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1583330796261">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1583339244833" />
+    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1583330796261" />
     <state x="874" y="209" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1583326648949">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
