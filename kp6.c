@@ -3,6 +3,17 @@
 #define log10(n) floor(log(n))
 typedef enum boolean{true=1, false=0} bool;
 
+bool compare_str(char x[], char y[], int size){
+    for(int i=0; i<size; i++){
+        if(x[i]==0 && y[i]==0) break;
+        if(x[i]!=y[i]) return false;
+    }
+    return true;
+}
+
+void let_str_str(char x[], char y[], int size){
+    for(int i=0; i<size; i++) x[i]=y[i];
+}
 
 int str_to_int(char x[], int size){
     int ans=0;
@@ -48,9 +59,9 @@ int main(int num, char* args[]) {
         file = fopen(args[3], "rb");
         data man;
         while(fread(&man, sizeof(data), 1, file)){
-            if(man.ID == str_to_int(args[2],log10(man.ID)) || man.destination == args[2] || man.got_change == str_to_bool(args[2]) ||
-            man.lastname == args[2] || man.init == args[2] || man.number == str_to_int(args[2],2) || man.wight == str_to_int(args[2],3) ||
-            man.time == args[2] || man.got_children == str_to_bool(args[2])) {// сумки должны быть двух знаков,вес - 3-х знаков, наличие детей обозначается true или false
+            if(man.ID == str_to_int(args[2],log10(man.ID)) || compare_str(man.destination, args[2],32) ||
+            compare_str(man.lastname, args[2], 32) || compare_str(man.init,args[2], 2) || man.number == str_to_int(args[2],2) || man.wight == str_to_int(args[2],3) ||
+            compare_str(man.time,args[2],5) ) {// сумки должны быть двух знаков,вес - 3-х знаков, наличие детей обозначается true или false
                 printf("%d %s %s %d %d %s %s ",man.ID , man.lastname, man.init, man.number, man.wight, man.destination, man.time);
                 if(man.got_change){
                     printf("true ");
@@ -70,7 +81,7 @@ int main(int num, char* args[]) {
             }
         }
         fclose(file);
-        printf("No such man in DB");
+        printf("No such man in DB\n");
         return 2;
     }
 
@@ -82,12 +93,12 @@ int main(int num, char* args[]) {
         clear(man.destination, 32);
         clear(man.time, 5);
 
+
         for(int param=1; param<10; param++){
-            int j=0;
-            //TODO переделать if под свою БД
-            while(argv[param+1][j]>0) j++;
-            if(param==1) let_str_str(record.surname, argv[param+1], j);
-            if(param==2) record.name=argv[param+1][0];
+            int count=0;
+            while(args[param+1][count] > 0) count++;//подсчет символов
+            if(param==1) let_str_str(man.lastname, args[param+1], count);
+            if(param==2) man.name=argv[param+1][0];
             if(param==3) record.patron=argv[param+1][0];
             if(param==4){
                 if(argv[param+1][0]=='m' || argv[param+1][0]=='f') record.gender=(argv[param+1][0]=='f'? female:male);
@@ -97,24 +108,26 @@ int main(int num, char* args[]) {
                 }
             }
             if(param==5){
-                int number=str_to_int(argv[param+1], j);
+                int number=str_to_int(argv[param+1], count);
                 if(number==-1){
                     printf("Invalid group number. Check your input\n");
                     return 4;
                 }
-                else record.group_number=str_to_int(argv[param+1], j);
+                else record.group_number=str_to_int(argv[param+1], count);
             }
             if(param==6) record.group_letter=argv[param+1][0];
-            if(param==7) let_str_str(record.higher_education, argv[param+1], j);
-            if(param==8) let_str_str(record.work, argv[param+1], j);
-            if(param==9) let_str_str(record.army, argv[param+1], j);
+            if(param==7) let_str_str(record.higher_education, argv[param+1], count);
+            if(param==8) let_str_str(record.work, argv[param+1], count);
+            if(param==9) let_str_str(record.army, argv[param+1], count);
         }
-        //TODO записать результат в файл
+
         FILE *file = NULL;
         file = fopen(args[10], "ab");
         if(file){//это просто проверка на существование файла
-
+            fwrite(&man, sizeof(data), 1, file);
             fclose(file);
+            printf("Successfully added. ID: %d\n", man.ID);
+            return 0;
         }
         else{
             fclose(file);
