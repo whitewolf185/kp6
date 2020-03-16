@@ -84,9 +84,8 @@ if [[ "$key_add" -eq 1 ]]; then
   param6=$6
   param7=$7
   param8=$8
-  param9=$9
 
-    ./cmake-build-debug/kp6 a "$param1" "$param2" "$param3" "$param4" "$param5" "$param6" "$param7" "$param8" "$param9" "$file_path" || exit 1
+    ./cmake-build-debug/kp6 a "$param1" "$param2" "$param3" "$param4" "$param5" "$param6" "$param7" "$param8" "$file_path" || exit 1
 fi
 
 if [ "$key_del" -eq 1 ]; then

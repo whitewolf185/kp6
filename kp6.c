@@ -36,15 +36,14 @@ bool str_to_bool(char x[]){
 }
 
 typedef struct data {
-    int ID;
-    char lastname[32];
-    char init [2];
-    int number;
-    int wight;
-    char destination[32];
-    char time[5];
-    bool got_change;
-    bool got_children; //9 параметров
+    char lastname[32]; //1
+    char init [2]; // 2
+    int number; // 3
+    int wight; // 4
+    char destination[32]; // 5
+    char time[5]; // 6
+    bool got_change; // 7
+    bool got_children; //8 параметров
 } data;
 
 
@@ -59,10 +58,10 @@ int main(int num, char* args[]) {
         file = fopen(args[3], "rb");
         data man;
         while(fread(&man, sizeof(data), 1, file)){
-            if(man.ID == str_to_int(args[2],log10(man.ID)) || compare_str(man.destination, args[2],32) ||
-            compare_str(man.lastname, args[2], 32) || compare_str(man.init,args[2], 2) || man.number == str_to_int(args[2],2) || man.wight == str_to_int(args[2],3) ||
+            if(compare_str(man.destination, args[2],32) || compare_str(man.lastname, args[2], 32) || compare_str(man.init,args[2], 2) ||
+            man.number == str_to_int(args[2],2) || man.wight == str_to_int(args[2],3) ||
             compare_str(man.time,args[2],5) ) {// сумки должны быть двух знаков,вес - 3-х знаков, наличие детей обозначается true или false
-                printf("%d %s %s %d %d %s %s ",man.ID , man.lastname, man.init, man.number, man.wight, man.destination, man.time);
+                printf("%s %s %d %d %s %s ", man.lastname, man.init, man.number, man.wight, man.destination, man.time);
                 if(man.got_change){
                     printf("true ");
                 }
@@ -94,31 +93,37 @@ int main(int num, char* args[]) {
         clear(man.time, 5);
 
 
-        for(int param=1; param<10; param++){
+        for(int param=1; param<9; param++){
             int count=0;
             while(args[param+1][count] > 0) count++;//подсчет символов
-            if(param==1) let_str_str(man.lastname, args[param+1], count);
-            if(param==2) man.name=argv[param+1][0];
-            if(param==3) record.patron=argv[param+1][0];
+            if(param==1) {let_str_str(man.lastname, args[param+1], count);}
+            if(param==2) {let_str_str(man.init, args[param+1], count);}
+            if(param==3) {man.number = str_to_int(args[param+1],2);}
             if(param==4){
-                if(argv[param+1][0]=='m' || argv[param+1][0]=='f') record.gender=(argv[param+1][0]=='f'? female:male);
-                else{
-                    printf("Invalid gender. Check your input\n");
-                    return 4;
-                }
+                man.wight = str_to_int(args[param+1], 3);
             }
             if(param==5){
-                int number=str_to_int(argv[param+1], count);
-                if(number==-1){
-                    printf("Invalid group number. Check your input\n");
-                    return 4;
-                }
-                else record.group_number=str_to_int(argv[param+1], count);
+                let_str_str(man.destination, args[param + 1], count);
             }
-            if(param==6) record.group_letter=argv[param+1][0];
-            if(param==7) let_str_str(record.higher_education, argv[param+1], count);
-            if(param==8) let_str_str(record.work, argv[param+1], count);
-            if(param==9) let_str_str(record.army, argv[param+1], count);
+            if(param==6) {
+                let_str_str(man.time, args[param+1], 5);
+            }
+            if(param==7) {
+                if(args[param+1] == "true"){
+                    man.got_change = true;
+                }
+                else{
+                    man.got_change = false;
+                }
+            }
+            if(param==8) {
+                if(args[param+1] == "true"){
+                    man.got_children = true;
+                }
+                else{
+                    man.got_children = false;
+                }
+            }
         }
 
         FILE *file = NULL;
@@ -126,10 +131,11 @@ int main(int num, char* args[]) {
         if(file){//это просто проверка на существование файла
             fwrite(&man, sizeof(data), 1, file);
             fclose(file);
-            printf("Successfully added. ID: %d\n", man.ID);
+            printf("Successfully added. ");
             return 0;
         }
         else{
+            printf("St goes wrong with file\n");
             fclose(file);
             return 1;
         }
