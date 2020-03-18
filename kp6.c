@@ -39,9 +39,9 @@ typedef struct data {
     int number; // 3
     int wight; // 4
     char destination[32]; // 5
-    char time[5]; // 6
-    bool got_change; // 7
-    bool got_children; //8 параметров
+    char time[6]; // 6
+    char got_change[6]; // 7
+    char got_children[6]; //8 параметров
 } data;
 
 
@@ -59,20 +59,7 @@ int main(int num, char* args[]) {
             if(compare_str(man.destination, args[2],32) || compare_str(man.lastname, args[2], 32) || compare_str(man.init,args[2], 2) ||
             man.number == str_to_int(args[2],2) || man.wight == str_to_int(args[2],3) ||
             compare_str(man.time,args[2],5) ) {// сумки должны быть двух знаков,вес - 3-х знаков, наличие детей обозначается true или false
-                printf("%s %s %d %d %s %s ", man.lastname, man.init, man.number, man.wight, man.destination, man.time);
-                if(man.got_change){
-                    printf("true ");
-                }
-                else{
-                    printf("false ");
-                }
-
-                if(man.got_children){
-                    printf("true");
-                }
-                else{
-                    printf("false");
-                }
+                printf("%s %s %d %d %s %s %s %s\n", man.lastname, man.init, man.number, man.wight, man.destination, man.time, man.got_change, man.got_children);
                 fclose(file);
                 return 0;
             }
@@ -88,7 +75,9 @@ int main(int num, char* args[]) {
         clear(man.lastname, 32);
         clear(man.init, 2);
         clear(man.destination, 32);
-        clear(man.time, 5);
+        clear(man.time, 6);
+        clear(man.got_change,6);
+        clear(man.got_children, 6);
 
 
         for(int param=1; param<9; param++){
@@ -107,20 +96,10 @@ int main(int num, char* args[]) {
                 let_str_str(man.time, args[param+1], 5);
             }
             if(param==7) {
-                if(args[param+1] == "true"){
-                    man.got_change = true;
-                }
-                else{
-                    man.got_change = false;
-                }
+                let_str_str(man.got_change, args[param+1], 6);
             }
             if(param==8) {
-                if(args[param+1] == "true"){
-                    man.got_children = true;
-                }
-                else{
-                    man.got_children = false;
-                }
+                let_str_str(man.got_children, args[param+1], 6);
             }
         }
 
@@ -129,7 +108,7 @@ int main(int num, char* args[]) {
         if(file){//это просто проверка на существование файла
             fwrite(&man, sizeof(data), 1, file);
             fclose(file);
-            printf("Successfully added. ");
+            printf("Successfully added. \n");
             return 0;
         }
         else{
@@ -148,7 +127,7 @@ int main(int num, char* args[]) {
             int j=1;
             data record;
             while(fread(&record, sizeof(data), 1, base)){
-                printf("%d | %s %s %d %d %s %s %s %s\n", j, record.lastname, record.init, record.number, record.wight, record.destination, record.time, record.got_change? "true" : "false", record.got_children? "true" : "false");
+                printf("%d | %s %s %d %d %s %s %s %s\n", j, record.lastname, record.init, record.number, record.wight, record.destination, record.time, record.got_change, record.got_children);
                 j++;
             }
             fclose(base);
@@ -220,7 +199,7 @@ int main(int num, char* args[]) {
         if(file){
             while(fread(&man, sizeof(data), 1, file)){
                 if(p < man.number){
-                    printf("%d | %s %s %d %d %s %s %s %s\n", j, man.lastname, man.init, man.number, man.wight, man.destination, man.time, man.got_change? "true" : "false", man.got_children? "true" : "false");
+                    printf("%d | %s %s %d %d %s %s %s %s\n", j, man.lastname, man.init, man.number, man.wight, man.destination, man.time, man.got_change, man.got_children);
                     not_exist = false;
                 }
                 j++;
