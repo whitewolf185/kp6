@@ -165,7 +165,50 @@ int main(int num, char* args[]) {
 
     //delete
     if (args[1][0] == 'd'){
-
+        FILE *base=NULL;
+        base=fopen(args[3], "rb");
+        FILE *tmp=NULL;
+        tmp=fopen("tmp_file", "ab");
+        if(tmp && base) {
+            int size = 0;
+            while (args[2][size] > 0) {//подсчет цифр в числе
+                size++;
+            }
+            int n = str_to_int(args[2], size);
+            int j = 1;
+            data record;
+            while (fread(&record, sizeof(data), 1, base) > 0) {
+                if (j != n) fwrite(&record, sizeof(data), 1, tmp);
+                j++;
+            }
+            if (n >= j || 1 > n) {
+                fclose(tmp);
+                remove("tmp_file");
+                fclose(base);
+                printf("Record %d in %s does not exist\n", n, args[3]);
+                return 4;
+            } else {
+                fclose(base);
+                base = fopen(args[3], "wb");
+                fclose(tmp);
+                tmp = fopen("tmp_file_11235813", "rb");
+                while (fread(&record, sizeof(data), 1, tmp) > 0) {
+                    fwrite(&record, sizeof(data), 1, base);
+                }
+                fclose(base);
+                fclose(tmp);
+                remove("tmp_file");
+                printf("Successfully removed %d record from %s\n", n, args[3]);
+                return 0;
+            }
+        }
+        else{
+            fclose(base);
+            fclose(tmp);
+            remove("tmp_file");
+            printf("ST goes wrong with file. Try -h\n");
+            return 1;
+        }
     }
 
     //making my task
