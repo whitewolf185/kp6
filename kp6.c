@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <math.h>
-#define log10(n) floor(log(n))
 typedef enum boolean{true=1, false=0} bool;
 
 bool compare_str(char x[], char y[], int size){
@@ -213,9 +211,36 @@ int main(int num, char* args[]) {
 
     //making my task
     if(args[1][0] == 'm'){
-
+        FILE *file = NULL;
+        file = fopen(args[3], "rb");
+        data man;
+        bool not_exist = true;
+        int p = str_to_int(args[2], 2);
+        int j = 1;
+        if(file){
+            while(fread(&man, sizeof(data), 1, file)){
+                if(p < man.number){
+                    printf("%d | %s %s %d %d %s %s %s %s\n", j, man.lastname, man.init, man.number, man.wight, man.destination, man.time, man.got_change? "true" : "false", man.got_children? "true" : "false");
+                    not_exist = false;
+                }
+                j++;
+            }
+            if(not_exist){
+                fclose(file);
+                printf("not exist\n");
+                return 1;
+            }
+            fclose(file);
+           return 0;
+        }
+        else{
+            fclose(file);
+            printf("ST goes wrong with file. Check -h\n");
+            return 1;
+        }
     }
-    return 0;
+    printf("Wrong parameters. Check -h\n");
+    return 1;
 }
 /*
 Волков, МА, 03, 042, Марс, 04:20, да, 0
