@@ -30,19 +30,19 @@ do
 done
 param=$1
 
-if [[ ! -e "$file_path" ]]; then
-    echo "File does not exist. Do you want to create its?"
-    read -p "y/n " a
-    if [[ "$a" = "y" ]]; then
-      key_create=1
-    fi
-fi
-
 #Показать помощь
 if [[ $key_help -eq 1 ]]
 then
   cat help.txt
   exit 0
+fi
+
+if [[ ! -e "$file_path" && $key_create -eq 0 ]]; then
+    echo "File does not exist. Do you want to create its?"
+    read -p "y/n " a
+    if [[ "$a" = "y" ]]; then
+      key_create=1
+    fi
 fi
 
 #Создание БД
