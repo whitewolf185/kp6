@@ -135,11 +135,32 @@ int main(int num, char* args[]) {
             return 0;
         }
         else{
-            printf("St goes wrong with file\n");
+            printf("St goes wrong with file.\n");
             fclose(file);
             return 1;
         }
 
+    }
+
+    //show all DB
+    if (args[1][0] == 's'){
+        FILE *base=NULL;
+        base=fopen(args[2], "rb");
+        if(base){
+            int j=1;
+            data record;
+            while(fread(&record, sizeof(data), 1, base)){
+                printf("%d | %s %s %d %d %s %s %s %s\n", j, record.lastname, record.init, record.number, record.wight, record.destination, record.time, record.got_change? "true" : "false", record.got_children? "true" : "false");
+                j++;
+            }
+            fclose(base);
+            return 0;
+        }
+        else{
+            fclose(base);
+            printf("ST goes wrong with file. Please, check -h\n");
+            return 1;
+        }
     }
 
     //delete

@@ -38,12 +38,14 @@ if [[ ! -e "$file_path" ]]; then
     fi
 fi
 
+#Показать помощь
 if [[ $key_help -eq 1 ]]
 then
   cat help.txt
   exit 0
 fi
 
+#Создание БД
 if [[ $key_create -eq 1 ]]
 then
   > "$file_path"
@@ -51,6 +53,7 @@ then
   exit 0
 fi
 
+#удаление БД
 if [[ $key_del_alldb -eq 1 ]]
 then
   rm "$file_path" || exit 126
@@ -58,9 +61,10 @@ then
   exit 0
 fi
 
+#показать БД
 if [[ "$key_show_alldb" -eq 1 ]]
 then
-  cat "$file_path" || exit 126
+  ./cmake-build-debug/kp6 s "$file_path" || exit 126
   exit 0
 fi
 
@@ -70,11 +74,13 @@ then
   exit 1
 fi
 
+#request
 if [[ "$key_show" -eq 1 ]]
 then
   ./cmake-build-debug/kp6 q "$param" "$file_path" || exit 1
 fi
 
+#добавление
 if [[ "$key_add" -eq 1 ]]; then
   param1=$1
   param2=$2
@@ -88,10 +94,12 @@ if [[ "$key_add" -eq 1 ]]; then
     ./cmake-build-debug/kp6 a "$param1" "$param2" "$param3" "$param4" "$param5" "$param6" "$param7" "$param8" "$file_path" || exit 1
 fi
 
+#удалить элемент
 if [ "$key_del" -eq 1 ]; then
     ./cmake-build-debug/kp6 d "$param" "$file_path" || exit 1
 fi
 
+#сделать мое задание
 if [ "$key_MakeMyTask" -eq 1 ]; then
     ./cmake-build-debug/kp6 m "$param" "$file_path" || exit 1
 fi
