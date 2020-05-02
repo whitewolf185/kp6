@@ -82,18 +82,22 @@ fi
 
 #добавление
 if [[ "$key_add" -eq 1 ]]; then
-  param1=$1
-  param2=$2
-  param3=$3
-  param4=$4
-  param5=$5
-  param6=$6
-  param7=$7
-  param8=$8
+  if [[ "$#" -eq 9 ]]; then
+    param1=$1
+    param2=$2
+    param3=$3
+    param4=$4
+    param5=$5
+    param6=$6
+    param7=$7
+    param8=$8
 
-    ./cmake-build-debug/kp6 a "$param1" "$param2" "$param3" "$param4" "$param5" "$param6" "$param7" "$param8" "$file_path" || exit 1
+      ./cmake-build-debug/kp6 a "$param1" "$param2" "$param3" "$param4" "$param5" "$param6" "$param7" "$param8" "$file_path" || exit 1
+  else
+    echo "sm wrong with parameters"
+    exit 1
+  fi
 fi
-
 #удалить элемент
 if [ "$key_del" -eq 1 ]; then
     ./cmake-build-debug/kp6 d "$param" "$file_path" || exit 1
