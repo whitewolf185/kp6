@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/im/CLionProjects/kp6/maks.c" "/home/im/CLionProjects/kp6/cmake-build-debug/CMakeFiles/maks.dir/maks.c.o"
+  "/mnt/d/Projects/c++/kp6/maks.c" "/mnt/d/Projects/c++/kp6/cmake-build-debug/CMakeFiles/maks.dir/maks.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

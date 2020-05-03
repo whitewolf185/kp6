@@ -42,6 +42,8 @@ if [[ ! -e "$file_path" && $key_create -eq 0 ]]; then
     read -p "y/n " a
     if [[ "$a" = "y" ]]; then
       key_create=1
+    else
+      exit 0
     fi
 fi
 
@@ -94,16 +96,26 @@ if [[ "$key_add" -eq 1 ]]; then
 
       ./cmake-build-debug/kp6 a "$param1" "$param2" "$param3" "$param4" "$param5" "$param6" "$param7" "$param8" "$file_path" || exit 1
   else
-    echo "sm wrong with parameters"
+    echo "Missing arguments. Check -h"
     exit 1
   fi
 fi
 #удалить элемент
 if [ "$key_del" -eq 1 ]; then
-    ./cmake-build-debug/kp6 d "$param" "$file_path" || exit 1
+  if [[ "$#" -eq 3 ]]; then
+      ./cmake-build-debug/kp6 d "$param" "$file_path" || exit 1
+  else
+    echo "Missing arguments. Check -h"
+    exit 1
+  fi
 fi
 
 #сделать мое задание
 if [ "$key_MakeMyTask" -eq 1 ]; then
-    ./cmake-build-debug/kp6 m "$param" "$file_path" || exit 1
+  if [[ "$#" -eq 3 ]]; then
+     ./cmake-build-debug/kp6 m "$param" "$file_path" || exit 1
+  else
+    echo "Missing arguments. Check -h"
+    exit 1
+  fi
 fi
