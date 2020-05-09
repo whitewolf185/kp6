@@ -11,7 +11,7 @@ key_MakeMyTask=0
 #exicutable keys end
 #__________________________
 file_path="${!#}"
-for (( i=1; i <= $#; i++ ))
+for (( i=1; i <= "$#"; i++ ))
 do
   if [ "${1:0:1}" = "-" ]; then
   case "$1" in
@@ -66,7 +66,7 @@ fi
 #показать БД
 if [[ "$key_show_alldb" -eq 1 ]]
 then
-  ./cmake-build-debug/kp6 s "$file_path" || exit 126
+  ./cmake-build-debug/kp6.exe s "$file_path" || exit 126
   exit 0
 fi
 
@@ -79,7 +79,7 @@ fi
 #request
 if [[ "$key_show" -eq 1 ]]
 then
-  ./cmake-build-debug/kp6 q "$param" "$file_path" || exit 1
+  ./cmake-build-debug/kp6.exe q "$param" "$file_path" || exit 1
 fi
 
 #добавление
@@ -94,7 +94,7 @@ if [[ "$key_add" -eq 1 ]]; then
     param7=$7
     param8=$8
 
-      ./cmake-build-debug/kp6 a "$param1" "$param2" "$param3" "$param4" "$param5" "$param6" "$param7" "$param8" "$file_path" || exit 1
+      ./cmake-build-debug/kp6.exe a "$param1" "$param2" "$param3" "$param4" "$param5" "$param6" "$param7" "$param8" "$file_path" || exit 1
   else
     echo "Missing arguments. Check -h"
     exit 1
@@ -102,8 +102,8 @@ if [[ "$key_add" -eq 1 ]]; then
 fi
 #удалить элемент
 if [ "$key_del" -eq 1 ]; then
-  if [[ "$#" -eq 3 ]]; then
-      ./cmake-build-debug/kp6 d "$param" "$file_path" || exit 1
+  if [[ "$#" -eq 2 ]]; then
+      ./cmake-build-debug/kp6.exe d "$param" "$file_path" || exit 1
   else
     echo "Missing arguments. Check -h"
     exit 1
@@ -112,10 +112,10 @@ fi
 
 #сделать мое задание
 if [ "$key_MakeMyTask" -eq 1 ]; then
-  if [[ "$#" -eq 3 ]]; then
-     ./cmake-build-debug/kp6 m "$param" "$file_path" || exit 1
+  if [[ "$#" -eq 2 ]]; then
+     ./cmake-build-debug/kp6.exe m "$param" "$file_path" || exit 1
   else
-    echo "Missing arguments. Check -h"
+    echo "Missing arguments in make. Check -h"
     exit 1
   fi
 fi

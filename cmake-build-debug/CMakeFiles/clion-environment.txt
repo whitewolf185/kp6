@@ -1,4 +1,4 @@
-ToolSet: Ubuntu 20.04 LTS (local)@C:\Users\matve\AppData\Local\Microsoft\WindowsApps\ubuntu.exe
+ToolSet: w64 6.0 (local)@G:\Clion\MinGW\mingw32
 Options: 
 
 Options:

@@ -35,7 +35,7 @@ bool str_to_bool(char x[]){
 
 typedef struct data {
     char lastname[32]; //1
-    char init [2]; // 2
+    char init [3]; // 2
     int number; // 3
     int wight; // 4
     char destination[32]; // 5
@@ -73,7 +73,7 @@ int main(int num, char* args[]) {
     if (args[1][0] == 'a'){
         data man;
         clear(man.lastname, 32);
-        clear(man.init, 2);
+        clear(man.init, 3);
         clear(man.destination, 32);
         clear(man.time, 6);
         clear(man.got_change,6);
@@ -102,7 +102,7 @@ int main(int num, char* args[]) {
                 let_str_str(man.got_children, args[param+1], 6);
             }
         }
-
+ //       printf("%d\n",man.number);
         FILE *file = NULL;
         file = fopen(args[10], "ab");
         if(file){//это просто проверка на существование файла
@@ -145,7 +145,7 @@ int main(int num, char* args[]) {
         FILE *base=NULL;
         base=fopen(args[3], "rb");
         FILE *tmp=NULL;
-        tmp=fopen("tmp_file", "ab");
+        tmp=fopen("tmp_file", "wb");
         if(tmp && base) {
             int size = 0;
             while (args[2][size] > 0) {//подсчет цифр в числе
@@ -155,7 +155,9 @@ int main(int num, char* args[]) {
             int j = 1;
             data record;
             while (fread(&record, sizeof(data), 1, base) > 0) {
-                if (j != n) fwrite(&record, sizeof(data), 1, tmp);
+                if (j != n) {
+                    fwrite(&record, sizeof(data), 1, tmp);
+                }
                 j++;
             }
             if (n >= j || 1 > n) {
@@ -168,7 +170,7 @@ int main(int num, char* args[]) {
                 fclose(base);
                 base = fopen(args[3], "wb");
                 fclose(tmp);
-                tmp = fopen("tmp_file_11235813", "rb");
+                tmp = fopen("tmp_file", "rb");
                 while (fread(&record, sizeof(data), 1, tmp) > 0) {
                     fwrite(&record, sizeof(data), 1, base);
                 }
@@ -194,12 +196,16 @@ int main(int num, char* args[]) {
         file = fopen(args[3], "rb");
         data man;
         bool not_exist = true;
-        int p = str_to_int(args[2], 2);
+        int size = 0;
+        while (args[2][size] > 0) {//подсчет цифр в числе
+            size++;
+        }
+        int p = str_to_int(args[2], size);
         int j = 1;
         if(file){
             while(fread(&man, sizeof(data), 1, file)){
                 if(p < man.number){
-                    printf("%d | %s %s %d %d %s %s %s %s\n", j, man.lastname, man.init, man.number, man.wight, man.destination, man.time, man.got_change, man.got_children);
+                    printf("%d | %s %.2s %d %d %s %s %s %s\n", j, man.lastname, man.init, man.number, man.wight, man.destination, man.time, man.got_change, man.got_children);
                     not_exist = false;
                 }
                 j++;

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/maks.dir/maks.c.o"
-  "maks"
+  "CMakeFiles/maks.dir/maks.c.obj"
+  "libmaks.dll.a"
+  "maks.exe"
+  "maks.exe.manifest"
   "maks.pdb"
 )
 
